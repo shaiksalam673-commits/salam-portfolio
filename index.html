@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salam Shaik | AI Engineer & Backend Developer Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Salam Shaik, Computer Science Engineering Student & Aspiring AI/Backend Developer. Specializing in Python, Machine Learning, and Robust Backend Architectures.">
+  <meta name="keywords" content="Salam Shaik, Portfolio, AI Engineer, Python Developer, Backend Developer, Machine Learning, Web Development, Computer Science Engineering, Student Portfolio">
+  <meta name="author" content="Salam Shaik">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Salam Shaik | AI Engineer & Backend Developer Portfolio">
+  <meta property="og:description" content="Explore Salam Shaik's personal developer portfolio showcasing projects in artificial intelligence, machine learning, data analysis, and full-stack backend development.">
+  <meta property="og:image" content="assets/images/advance_rag_assistant.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Salam Shaik | AI Engineer & Backend Developer Portfolio">
+  <meta property="twitter:description" content="Explore Salam Shaik's projects in AI, ML, Data Analytics, and Backend Development.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading Animation Overlay -->
+  <div id="loader" class="loader-overlay" aria-hidden="true">
+    <div class="loader-spinner">
+      <div class="spinner-ring"></div>
+      <span class="loader-text">Initializing portfolio...</span>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-indicator" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#home" class="logo" aria-label="Salam Shaik's Portfolio Home">
+        Salam<span class="logo-accent">.dev</span>
+      </a>
+
+      <!-- Desktop Nav List -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Utility Actions (Theme Toggle & Mobile Menu Toggle) -->
+      <div class="nav-utilities">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle between dark and light mode">
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun"></i>
+        </button>
+        
+        <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <!-- Interactive Three.js Background Canvas Container -->
+    <div id="canvas-container" class="canvas-container" aria-hidden="true"></div>
+    
+    <div class="container hero-content">
+      <div class="hero-card glass-panel reveal">
+        <span class="greeting-badge">Welcome to my space</span>
+        <h1 class="hero-name">Salam Shaik</h1>
+        <h2 class="hero-title">
+          <span class="static-txt">I am an </span>
+          <span class="type-cursor" id="typing-text"></span>
+        </h2>
+        <p class="hero-intro">
+          Computer Science Engineering student specializing in scalable backend systems, intelligence modeling, and data analytics. Focused on bridging the gap between sophisticated machine learning algorithms and production-ready server architectures.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="assets/docs/resume.pdf" class="btn btn-primary" download aria-label="Download Resume PDF">
+            <i data-lucide="download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-secondary" aria-label="Navigate to contact form">
+            Get In Touch <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/shaiksalam673-commits" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub profile link">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/salam-shaik-75a275225/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn profile link">
+            <i data-lucide="linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-down-hint" aria-hidden="true">
+      <a href="#about" aria-label="Scroll down to about section">
+        <span>Scroll Down</span>
+        <i data-lucide="chevron-down" class="animated-chevron"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-panel reveal">
+          <div class="about-avatar-placeholder">
+            <i data-lucide="user" class="avatar-fallback"></i>
+          </div>
+          <div class="about-brief">
+            <h3>Salam Shaik</h3>
+            <p class="role">Computer Science Engineering Student</p>
+            <p class="location"><i data-lucide="map-pin"></i> India</p>
+          </div>
+        </div>
+
+        <div class="about-details reveal">
+          <h3 class="about-headline">Passionate AI Developer & Backend Engineer</h3>
+          <p class="about-desc">
+            As a Computer Science Engineering student, I thrive on building tools that solve complex, real-world problems. My interest lies at the intersection of **Artificial Intelligence**, **Machine Learning**, **Data Analytics**, and **Robust Backend Architectures**.
+          </p>
+          <p class="about-desc">
+            I am driven by clean code, optimal data structures, and the exciting prospect of deploying intelligent agents to standard cloud backends. I possess a strong foundation in Python, SQL, data analytics, and modern web deployment paradigms.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card glass-panel">
+              <span class="stat-num">B.Tech</span>
+              <span class="stat-lbl">CSE Student</span>
+            </div>
+            <div class="stat-card glass-panel">
+              <span class="stat-num">5+</span>
+              <span class="stat-lbl">Complex Projects</span>
+            </div>
+            <div class="stat-card glass-panel">
+              <span class="stat-num">AI & ML</span>
+              <span class="stat-lbl">Focus Area</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">My toolkit</span>
+        <h2 class="section-title">Core Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Skills -->
+        <div class="skills-category-card glass-panel reveal">
+          <div class="category-header">
+            <i data-lucide="code-2" class="category-icon"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="Python proficiency 90%">
+                <div class="skill-bar-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Java</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="Java proficiency 80%">
+                <div class="skill-bar-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="JavaScript proficiency 85%">
+                <div class="skill-bar-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>SQL</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="SQL proficiency 88%">
+                <div class="skill-bar-fill" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI / ML Skills -->
+        <div class="skills-category-card glass-panel reveal">
+          <div class="category-header">
+            <i data-lucide="brain-circuit" class="category-icon"></i>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>TensorFlow</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="TensorFlow proficiency 75%">
+                <div class="skill-bar-fill" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Keras</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="Keras proficiency 75%">
+                <div class="skill-bar-fill" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Scikit-learn</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="Scikit-learn proficiency 80%">
+                <div class="skill-bar-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Pandas & NumPy</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="Pandas and NumPy proficiency 85%">
+                <div class="skill-bar-fill" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="skills-category-card glass-panel reveal">
+          <div class="category-header">
+            <i data-lucide="server" class="category-icon"></i>
+            <h3>Backend</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Node.js & Express</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="Node.js and Express proficiency 80%">
+                <div class="skill-bar-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>REST APIs</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="REST APIs proficiency 90%">
+                <div class="skill-bar-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>FastAPI</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="FastAPI proficiency 82%">
+                <div class="skill-bar-fill" style="width: 82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database Management -->
+        <div class="skills-category-card glass-panel reveal">
+          <div class="category-header">
+            <i data-lucide="database" class="category-icon"></i>
+            <h3>Database</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MySQL</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="MySQL proficiency 85%">
+                <div class="skill-bar-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>PostgreSQL</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="PostgreSQL proficiency 80%">
+                <div class="skill-bar-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MongoDB</span>
+                <span>78%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="MongoDB proficiency 78%">
+                <div class="skill-bar-fill" style="width: 78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dev Tools -->
+        <div class="skills-category-card glass-panel reveal">
+          <div class="category-header">
+            <i data-lucide="wrench" class="category-icon"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git & GitHub</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="Git and GitHub proficiency 90%">
+                <div class="skill-bar-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>VS Code</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="VS Code proficiency 92%">
+                <div class="skill-bar-fill" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Jupyter Notebook</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg" aria-label="Jupyter Notebook proficiency 85%">
+                <div class="skill-bar-fill" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Recent work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card glass-panel reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/images/advance_rag_assistant.png" alt="Dashboard for Advanced RAG Assistant showing document indexing and retrieval metrics" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shaiksalam673-commits/advance-rag-assistent" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Advanced RAG Assistant on GitHub">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <a href="#" class="project-link-btn" aria-label="View live demo of Advanced RAG Assistant">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Advanced RAG Assistant</h3>
+            <p class="project-desc">
+              Retrieval-Augmented Generation (RAG) assistant for intelligent document query processing. Indexes custom text databases and utilizes Large Language Models for context-aware QA.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">VectorDB</span>
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">OpenAI</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-panel reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/images/genai_chatbot.png" alt="Generative AI Chatbot dashboard showing conversation history and prompts" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shaiksalam673-commits/GenAI-Chat-bot-system" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View GenAI Chatbot System on GitHub">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <a href="#" class="project-link-btn" aria-label="View live demo of GenAI Chatbot System">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">GenAI Chatbot System</h3>
+            <p class="project-desc">
+              Intelligent generative conversational chatbot capable of multi-turn dialogues, system instruction customization, and dynamic context retrieval using advanced text generation APIs.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">GenAI</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">NLP</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass-panel reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/images/tomato_disease_prediction.png" alt="Tomato leaf disease classifier scanning leaves and showing predictions" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shaiksalam673-commits/Tomato_Disease_Prediction" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Tomato Disease Prediction on GitHub">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <a href="#" class="project-link-btn" aria-label="View live demo of Tomato Disease Prediction">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Tomato Disease Prediction</h3>
+            <p class="project-desc">
+              Deep learning computer vision system designed to classify leaf anomalies in tomato crops. Utilizes convolutional neural networks to predict leaf disease strains and suggest treatments.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Keras</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">CNN</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card glass-panel reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/images/ml_projects.png" alt="Machine learning dashboard showing regression lines and metrics graphs" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shaiksalam673-commits/ml_projects" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Machine Learning Projects Hub on GitHub">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <a href="#" class="project-link-btn" aria-label="View live demo of ML Projects Hub">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Machine Learning Projects Hub</h3>
+            <p class="project-desc">
+              A comprehensive curation of regression, classification, and statistical models. Implements data processing pipelines, clustering models, and performance evaluation metrics.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Jupyter Notebook</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Scikit-learn</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card glass-panel reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/images/data_science_internship.png" alt="Data Science dashboard showing exploratory data analyses and data tables" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shaiksalam673-commits/internship" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Innomatics Internship Tasks on GitHub">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <a href="#" class="project-link-btn" aria-label="View live demo of Internship Tasks">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Data Science Internship Tasks</h3>
+            <p class="project-desc">
+              Practical industry assignments and projects completed during the Innomatics Research Labs data science internship. Covers exploratory data analysis (EDA), data cleaning, and statistical modeling.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Jupyter Notebook</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Data Cleansing</span>
+              <span class="tech-tag">EDA</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">My journey</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="experience-grid">
+        <!-- Card 1 -->
+        <div class="experience-card glass-panel reveal">
+          <div class="exp-icon-box">
+            <i data-lucide="line-chart"></i>
+          </div>
+          <h3 class="exp-title">Data Science Projects</h3>
+          <span class="exp-duration">Academic & Self-Initiated</span>
+          <p class="exp-desc">
+            Extensive practical execution of data parsing pipelines, cleanings, and aggregations. Focused on extracting actionable insights using Python (Pandas/NumPy) and visual mapping schemas.
+          </p>
+          <ul class="exp-bullets">
+            <li>Built ETL loaders for massive relational tables.</li>
+            <li>Conducted hypothesis tests and outlier filtering.</li>
+            <li>Analyzed statistical models for market segments.</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="experience-card glass-panel reveal">
+          <div class="exp-icon-box">
+            <i data-lucide="cpu"></i>
+          </div>
+          <h3 class="exp-title">AI/ML Projects</h3>
+          <span class="exp-duration">Academic Research Focus</span>
+          <p class="exp-desc">
+            Designed, implemented, and tuned deep neural models and standard classifier frameworks. Focused on solving visual tracking anomalies and Natural Language parsing tasks.
+          </p>
+          <ul class="exp-bullets">
+            <li>Trained CNN structures for object recognition.</li>
+            <li>Optimized network layers reducing parameter weights.</li>
+            <li>Deployed predictive algorithms using REST architectures.</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="experience-card glass-panel reveal">
+          <div class="exp-icon-box">
+            <i data-lucide="git-pull-request"></i>
+          </div>
+          <h3 class="exp-title">Personal Development Projects</h3>
+          <span class="exp-duration">Continuous Learning</span>
+          <p class="exp-desc">
+            Building end-to-end full stack web platforms, setting up relational database backends, crafting REST endpoint structures, and creating modular utility libraries.
+          </p>
+          <ul class="exp-bullets">
+            <li>Designed and executed API specifications.</li>
+            <li>Integrated secure JWT user auth systems.</li>
+            <li>Created interactive dashboard UI clients.</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="experience-card glass-panel reveal">
+          <div class="exp-icon-box">
+            <i data-lucide="globe"></i>
+          </div>
+          <h3 class="exp-title">Open Source Learning</h3>
+          <span class="exp-duration">Community Collaborations</span>
+          <p class="exp-desc">
+            Contributing to tech communities, working through code architectures of public packages, reviewing peer documentation, and collaborating with Git version controls.
+          </p>
+          <ul class="exp-bullets">
+            <li>Participated in coding challenges.</li>
+            <li>Contributed to open developer docs.</li>
+            <li>Active repository audits and bug reports.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Academic path</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="timeline-container reveal">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content glass-panel">
+            <div class="timeline-header">
+              <span class="timeline-year">Present</span>
+              <h3>Bachelor of Technology</h3>
+              <p class="institution">Computer Science and Engineering</p>
+            </div>
+            <p class="timeline-desc">
+              Currently pursuing a comprehensive engineering degree focusing on computational theory, hardware architectures, database designs, and system architectures. Maintaining solid theoretical and practical grades.
+            </p>
+            
+            <div class="timeline-coursework">
+              <h4>Core Coursework:</h4>
+              <div class="course-tags">
+                <span class="course-tag">Data Structures & Algorithms</span>
+                <span class="course-tag">Database Management Systems</span>
+                <span class="course-tag">Operating Systems</span>
+                <span class="course-tag">Machine Learning</span>
+                <span class="course-tag">Artificial Intelligence</span>
+                <span class="course-tag">Computer Networks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Milestones</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card glass-panel reveal">
+          <div class="ach-badge">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <h3>GATE CS 2025</h3>
+          <p>Qualified the Graduate Aptitude Test in Engineering (GATE) in Computer Science & Information Technology, 2025.</p>
+        </div>
+
+        <div class="achievement-card glass-panel reveal">
+          <div class="ach-badge">
+            <i data-lucide="award"></i>
+          </div>
+          <h3>Python Programming</h3>
+          <p>Advanced certifications in software design patterns, complex algorithms, and automation in Python.</p>
+        </div>
+
+        <div class="achievement-card glass-panel reveal">
+          <div class="ach-badge">
+            <i data-lucide="pie-chart"></i>
+          </div>
+          <h3>Data Analytics</h3>
+          <p>Demonstrated mastery of data cleansing pipelines, complex SQL queries, and visualization dashboard builds.</p>
+        </div>
+
+        <div class="achievement-card glass-panel reveal">
+          <div class="ach-badge">
+            <i data-lucide="check-circle-2"></i>
+          </div>
+          <h3>AI/ML Learning</h3>
+          <p>Completed intensive training tracks on convolutional networks, NLP, and model optimization metrics.</p>
+        </div>
+
+        <div class="achievement-card glass-panel reveal">
+          <div class="ach-badge">
+            <i data-lucide="rocket"></i>
+          </div>
+          <h3>Project Development</h3>
+          <p>Successfully designed and deployed 5 complex web architectures integrating data structures and algorithms.</p>
+        </div>
+
+        <div class="achievement-card glass-panel reveal">
+          <div class="ach-badge">
+            <i data-lucide="lightbulb"></i>
+          </div>
+          <h3>Problem Solving</h3>
+          <p>Solved 150+ computational questions and algorithm puzzles across platforms like LeetCode and HackerRank.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Let's talk</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Info Card -->
+        <div class="contact-info-card glass-panel reveal">
+          <h3>Contact Details</h3>
+          <p class="contact-sub">Have a question or want to work together? Drop a message!</p>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <i data-lucide="mail"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:shaiksalam673@gmail.com">shaiksalam673@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i data-lucide="phone"></i>
+              <div>
+                <span>Phone</span>
+                <a href="tel:+917036641050">+91 7036641050</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i data-lucide="map-pin"></i>
+              <div>
+                <span>Location</span>
+                <p>India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials-wrap">
+            <span>Find me on:</span>
+            <div class="contact-socials">
+              <a href="https://github.com/shaiksalam673-commits" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/salam-shaik-75a275225/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i data-lucide="linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass-panel reveal">
+          <form id="portfolio-contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                <span class="error-msg" id="name-error">Please enter your name.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-phone">Phone Number (Optional)</label>
+                <input type="tel" id="form-phone" name="phone" placeholder="+91 7036641050">
+                <span class="error-msg" id="phone-error">Please enter a valid phone number.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Message <span class="required">*</span></label>
+              <textarea id="form-message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
+              <span class="error-msg" id="message-error">Please enter a message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message <i data-lucide="send"></i>
+            </button>
+            
+            <div class="form-status-msg" id="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="copyright">&copy; 2026 Salam Shaik. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top of page">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- CDN scripts -->
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

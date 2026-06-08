@@ -1,0 +1,97 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 2117 >>
+stream
+BT
+/F1 20 Tf
+50 780 Td
+(SALAM SHAIK) Tj
+/F1 11 Tf
+0 -25 Td
+(Email: shaiksalam673@gmail.com  |  Phone: +91 7036641050  |  GitHub: github.com/shaiksalam673-commits) Tj
+/F1 14 Tf
+0 -35 Td
+(PROFESSIONAL OBJECTIVE) Tj
+/F1 10 Tf
+0 -20 Td
+(Computer Science Engineering student specializing in scalable backend systems, intelligence modeling, and) Tj
+0 -15 Td
+(data analytics. Focused on bridging the gap between machine learning models and web backends.) Tj
+/F1 14 Tf
+0 -30 Td
+(EDUCATION) Tj
+/F1 10 Tf
+0 -20 Td
+(Bachelor of Technology in Computer Science and Engineering) Tj
+0 -15 Td
+(Relevant Coursework: Data Structures, DBMS, Operating Systems, Machine Learning, AI, Computer Networks) Tj
+/F1 14 Tf
+0 -30 Td
+(TECHNICAL TOOLKIT) Tj
+/F1 10 Tf
+0 -20 Td
+(Programming: Python, Java, JavaScript, SQL) Tj
+0 -15 Td
+(AI / Machine Learning: TensorFlow, Keras, Scikit-learn, Pandas, NumPy) Tj
+0 -15 Td
+(Backend & Databases: Node.js, Express.js, FastAPI, REST APIs, MySQL, PostgreSQL, MongoDB) Tj
+0 -15 Td
+(Developer Tools: Git, GitHub, VS Code, Jupyter Notebook) Tj
+/F1 14 Tf
+0 -30 Td
+(FEATURED PROJECTS) Tj
+/F1 10 Tf
+0 -20 Td
+(1. Advanced RAG Assistant: NLP-driven document Q&A parsing assistant using LangChain and OpenAI.) Tj
+0 -15 Td
+(2. GenAI Chatbot System: Intelligent context-aware multi-turn conversational chatbot.) Tj
+0 -15 Td
+(3. Tomato Leaf Disease Prediction: Deep learning CNN classifier predicting crop leaf disease strains.) Tj
+0 -15 Td
+(4. Machine Learning Projects: A curation of regression, classification, and dataset analysis pipelines.) Tj
+0 -15 Td
+(5. Data Science Internship Tasks: Relational data cleansings and EDA completed during internship.) Tj
+/F1 14 Tf
+0 -30 Td
+(EXPERIENCE AREAS) Tj
+/F1 10 Tf
+0 -20 Td
+(- Data Science Projects: ETL design, outlier analysis, relational schema mapping.) Tj
+0 -15 Td
+(- AI/ML Projects: CNN network tuning, classification scoring, vector tokenization.) Tj
+0 -15 Td
+(- Personal Projects: Client/server integrations, JWT security, custom middleware.) Tj
+/F1 14 Tf
+0 -30 Td
+(HONORS & ACHIEVEMENTS) Tj
+/F1 10 Tf
+0 -20 Td
+(- Qualified GATE Computer Science (CS) 2025.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2480
+%%EOF
